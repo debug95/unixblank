@@ -6,4 +6,4 @@ RUN service nginx start
 COPY assignment.sh /bin/
 RUN chmod +x /bin/assignment.sh
 RUN chmod +rwx -R /bin
-RUN /bin/assignment.sh
+CMD ["/bin/assignment.sh"]
